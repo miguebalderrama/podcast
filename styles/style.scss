@@ -263,12 +263,10 @@ footer{
   height: 12px;
   position: absolute;
   
-  
   cursor: pointer;
   
   opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
+  z-index: 2; /* and place it over the hamburger */  
   -webkit-touch-callout: none;
 }
 
@@ -309,7 +307,7 @@ footer{
 #menuToggle input:checked ~ span
 {
   opacity: 1;
-  transform: rotate(45deg) translate(2.5px, 2.5px);
+  transform: rotate(45deg) translate(2.5px, 3.5px);
   background: #232323;
 }
 
@@ -327,7 +325,7 @@ footer{
  */
 #menuToggle input:checked ~ span:nth-last-child(2)
 {
-  transform: rotate(-45deg) translate(0, -1px);
+  transform: rotate(-45deg) translate(0, 0px);
 }
 
 /*
@@ -339,19 +337,20 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  z-index: -1;
+  z-index: 1;
   position: absolute;
+
   width: 100%;
-  margin: -140px 0 0 -320px;
-  padding-bottom: 1rem ;
-  padding-top: 150px;
+  margin: 5px 0 0 -320px;
+  padding-bottom: 1rem ;  
   color: white;
   background: #0000EC;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
+  right: 0;
   transform-origin: 0% 100%;
-  transform: translate(0,-100%);
+  transform: translate(0,-130%);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
@@ -361,6 +360,7 @@ footer{
   padding: 10px 0 0 20px;
   font-size: 1rem;
   color: white;
+  font-weight: 400;
 }
 
 /*
