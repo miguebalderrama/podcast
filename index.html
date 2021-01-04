@@ -20,7 +20,7 @@
     <body>
         <header>
             <div class="logo">
-                <img src="../images/logo.svg" alt="imagen logo" width="24">
+                <img src="../images/logo.svg" alt="imagen logo" >
             </div>
             <nav>
                 <div id="menuToggle">
@@ -45,7 +45,7 @@
                     but hey, it's pure CSS magic.
                     -->
                     <ul id="menu">
-                      <a href="#EPISODIOS"><li>EPISODIOS</li></a>
+                      <li>EPISODIOS<a href="#EPISODIOS"></a></li></a>
                       <a href="#NOSOTROS"><li>NOSOTROS</li></a>
                       <a href="#ENTREVISTAS"><li>ENTREVISTAS</li></a>
                       <a href="#TÓPICOS"><li>TÓPICOS</li></a>                   
@@ -57,43 +57,49 @@
         </header>
         <main>
             <section class="landing_front" >
+                <div class="title">
                 <h1 class="tachado" >Hello </h1> 
-                 <h1>pale blue dot.</h1>
-                <p>Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
+                 <h1 class="point">pale blue dot
+                 <span><h1>.</h1></span></h1>
+                </div>
+                <p>Un podcast que explora el mundo de la programación</p>
                 <a href="" class="botom">CONOCÉ MÁS</a>
             </section>
             <section class="podcast">
                 
-                <div class="diagonal-box">
+                <div id="EPISODIOS" class="diagonal-box">
                     <h1>Episodios</h1>
                     <div class="content"> 
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"   allow="encrypted-media"></iframe>
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/7xKz7aDCl4lh69Xqefd73c"  allow="encrypted-media"></iframe>
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/4dCzPftdE0bIHvY6EDQfih"   allow="encrypted-media"></iframe>
-                        <iframe src="https://open.spotify.com/embed-podcast/episode/2zdfrPjGoLun0DI0ycPrtv"  allow="encrypted-media"></iframe>   
+                        <div class="frame"><iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"   allow="encrypted-media"></iframe></div>
+                        <div class="frame"><iframe src="https://open.spotify.com/embed-podcast/episode/7xKz7aDCl4lh69Xqefd73c"  allow="encrypted-media"></iframe></div>
+                        <div class="frame"><iframe src="https://open.spotify.com/embed-podcast/episode/4dCzPftdE0bIHvY6EDQfih"   allow="encrypted-media"></iframe></div>
+                        <div class="frame"><iframe src="https://open.spotify.com/embed-podcast/episode/2zdfrPjGoLun0DI0ycPrtv"  allow="encrypted-media"></iframe></div>   
                     </div>
                 </div>  
             </section>
+            <div id="NOSOTROS" class="container-phone">
             <section class="phone">
                 <img src="../images/phone.png" alt="">
             </section>
             <section class="where">
                 <h1>De dónde venimos</h1>
-                <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. <br>
-                    Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
-                <p></p>
+                <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.<br><br>
+                    Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+                </p>
             </section>
-            <section class="invited">
+        </div>
+            <section id="ENTREVISTAS" class="invited">
                 <h1>Invitadas/os estelares</h1>
                 <div class="container_picture">
-                <img src="../images/susan-kare.png" alt="susa-kare"> 
-                <img src="../images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="An E.R.A.Univac 1103 computer in the 1950s">
-                <img src="../images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Katie-Bouman">
-                <img src="../images/grace-hopper.png" alt="Katie-Bouman">
-                <img src="../images/Margaret_Hamilton.png" alt="Katie-Bouman">
+                <div class="image"><img src="../images/susan-kare.png" alt="susa-kare"></div> 
+                <div class="image"><img src="../images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="An E.R.A.Univac 1103 computer in the 1950s"></div> 
+                <div class="image"><img src="../images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Katie-Bouman"></div> 
+                <div class="image"><img src="../images/grace-hopper.png" alt="Katie-Bouman"></div> 
+                <div class="image"><img src="../images/Margaret_Hamilton.png" alt="Katie-Bouman"></div> 
+                <div class="image"><img src="../images/Katie-Bouman.png" alt="Katie-Bouman"></div>
             </div>
             </section>
-            <section class="themes">                
+            <section id="TÓPICOS" class="themes">                
                 <h1>Algunos de nuestros temas</h1>
                 <div class="container_icons">
                     <div class="pad">
